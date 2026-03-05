@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git 4-Stage Workflow</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header>
+        <h1>Git को समझना (Step-by-Step)</h1>
+        <p>दीप सिंह यादव द्वारा निर्मित नोट्स</p>
+    </header>
+
+    <main>
+        <section class="workflow-container">
+            <div class="stage" id="working">
+                <h2>1. Working Directory</h2>
+                <p>जहाँ आप कोड लिखते हैं।</p>
+                <code>git status</code>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage" id="staging">
+                <h2>2. Staging Area</h2>
+                <p>तैयारी का क्षेत्र (Waiting Area)।</p>
+                <code>git add .</code>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage" id="local">
+                <h2>3. Local Repo</h2>
+                <p>आपके कंप्यूटर में सेव (Snapshots)।</p>
+                <code>git commit -m "msg"</code>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage" id="remote">
+                <h2>4. Remote (GitHub)</h2>
+                <p>दुनिया के लिए उपलब्ध (Cloud)।</p>
+                <code>git push</code>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
